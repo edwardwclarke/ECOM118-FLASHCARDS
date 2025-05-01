@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 8 – Capital Structure and Value (ECOM118)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .home-link {
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .home-link a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border: 1px solid #2563eb;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .home-link a:hover {
+      background-color: #2563eb;
+      color: white;
+    }
+
+    .flashcard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      background-color: #fff;
+    }
+
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-sizing: border-box;
+    }
+
+    .card-front {
+      background-color: #e0f2fe;
+      font-weight: 600;
+    }
+
+    .card-back {
+      background-color: #fef3c7;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Week 8 – Capital Structure and Value (ECOM118)</h1>
+<div class="home-link">
+  <a href="https://edwardwclarke.github.io/ECOM118-FLASHCARDS/">Return to Home</a>
+</div>
+
+<div class="flashcard-grid">
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is Modigliani-Miller Proposition I (no taxes)?</div><div class="card-face card-back">Capital structure does not affect firm value: V_L = V_U. Debt has no benefit in a no-tax world.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Why does debt not add value in MM Proposition I?</div><div class="card-face card-back">No tax shield and investors can replicate leverage personally ("homemade leverage").</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is MM Proposition II (no taxes)?</div><div class="card-face card-back">As debt increases, cost of equity rises: r_e = r_0 + (B/S)(r_0 - r_d), but WACC remains the same.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What changes with MM when corporate taxes are introduced?</div><div class="card-face card-back">Debt creates value via tax shield: V_L = V_U + T * B. r_e rises more slowly due to tax benefits.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the revised MM Proposition II with taxes?</div><div class="card-face card-back">r_e = r_0 + (B/S)(r_0 - r_d)(1 - T). Equity gets riskier, but tax shield reduces the increase.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Why does WACC fall when you add debt (with taxes)?</div><div class="card-face card-back">Debt is cheaper than equity, and the tax shield reduces the total cost → WACC < r_0 → NPV increases.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the Optimal Capital Structure?</div><div class="card-face card-back">It’s the debt level that minimizes WACC and maximizes firm value, balancing tax benefits and distress costs.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What are costs of financial distress?</div><div class="card-face card-back">Direct (legal, admin) and indirect (underinvestment, poor stakeholder relations, risk-taking behavior).</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is Target Capital Structure (TCS)?</div><div class="card-face card-back">A long-term leverage mix chosen to support business strategy and used for valuation and decision-making.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Factors affecting Target Capital Structure?</div><div class="card-face card-back">FCF uncertainty, type of assets (intangible vs tangible), and tax rate.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How do you implement TCS?</div><div class="card-face card-back">Recapitalizations, tailored financing, and dividend policy adjustments.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What are the stylized facts from empirical evidence?</div><div class="card-face card-back">1. Most firms have <50% debt. 2. Capital structure varies by industry. 3. Most firms follow target ratios.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What’s Enterprise Value (EV)?</div><div class="card-face card-back">EV = sum of future Free Cash Flows discounted at WACC. Represents total firm value.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How do you get Equity Value from EV?</div><div class="card-face card-back">Equity Value = EV - Net Debt - Minority Interests + Non-core Assets</div></div></div>
+
+</div>
+
+</body>
+</html>
