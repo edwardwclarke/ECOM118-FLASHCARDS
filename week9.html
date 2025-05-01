@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 9 – Multiples & Relative Valuation (ECOM118)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .home-link {
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .home-link a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border: 1px solid #2563eb;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .home-link a:hover {
+      background-color: #2563eb;
+      color: white;
+    }
+
+    .flashcard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      background-color: #fff;
+    }
+
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-sizing: border-box;
+    }
+
+    .card-front {
+      background-color: #e0f2fe;
+      font-weight: 600;
+    }
+
+    .card-back {
+      background-color: #fef3c7;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Week 9 – Multiples & Relative Valuation (ECOM118)</h1>
+<div class="home-link">
+  <a href="https://edwardwclarke.github.io/ECOM118-FLASHCARDS/">Return to Home</a>
+</div>
+
+<div class="flashcard-grid">
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is a multiple?</div><div class="card-face card-back">A ratio showing the relationship between two financial metrics (e.g., P/E = Price per share ÷ Earnings per share).</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Why use multiples in valuation?</div><div class="card-face card-back">To identify undervalued or overvalued assets, cross-check DCF results, plan exits, and filter investments.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Types of valuation multiples?</div><div class="card-face card-back">Sales (P/S), Earnings (P/E), Book Value (P/B), Enterprise Value (EV/EBITDA), Leverage (Net-debt/EBITDA).</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Should we use multiples mechanically?</div><div class="card-face card-back">No. Understand what drives the multiple. Don’t use it as a shortcut for full valuation.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What drives the P/E multiple?</div><div class="card-face card-back">Payout ratio, growth rate (g), and cost of equity (r_e). PE = (Payout × (1+g)) ÷ (r_e – g).</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Does a low P/E mean cheap?</div><div class="card-face card-back">Not always. Higher growth or better fundamentals can justify a higher P/E.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What drives the P/B multiple?</div><div class="card-face card-back">Return on equity (ROE), payout ratio, growth, and cost of equity. PBV = (ROE × payout × (1+g)) ÷ (r_e – g).</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What drives EV/EBITDA?</div><div class="card-face card-back">Cash flows, tax rate, capex, working capital needs, and cost of capital (k_c).</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How to select comparables?</div><div class="card-face card-back">Pick companies with similar risk, sector, growth, and cash flow profiles.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the PEG ratio?</div><div class="card-face card-back">P/E divided by expected growth rate. It adjusts P/E for growth differences across firms.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Caveats in using multiples?</div><div class="card-face card-back">Accounting differences, special situations (like restructuring), and oversimplification.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Tip 1: Fix the reference year?</div><div class="card-face card-back">Yes! EV2023 ÷ EBITDA2025 or Price2023 ÷ EPS2025. Keep the base year consistent.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Tip 2: Use forward estimates?</div><div class="card-face card-back">Yes. Use expected EPS, EBITDA, etc., from analysts or DCF forecasts, not historical values.</div></div></div>
+
+  <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Steps to compute PE comparison?</div><div class="card-face card-back">Get prices and EPS estimates, compute PE for your firm and peers, compare using averages.</div></div></div>
+
+</div>
+
+</body>
+</html>
