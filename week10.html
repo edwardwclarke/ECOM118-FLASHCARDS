@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 10 – Real Options & Limitations of DCF (ECOM118)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 2rem;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .home-link {
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .home-link a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 500;
+      font-size: 0.95rem;
+      border: 1px solid #2563eb;
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .home-link a:hover {
+      background-color: #2563eb;
+      color: white;
+    }
+
+    .flashcard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      perspective: 1000px;
+    }
+
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      cursor: pointer;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      background-color: #fff;
+    }
+
+    .card.flipped .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-sizing: border-box;
+    }
+
+    .card-front {
+      background-color: #e0f2fe;
+      font-weight: 600;
+    }
+
+    .card-back {
+      background-color: #fef3c7;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Week 10 – Real Options & Limitations of DCF (ECOM118)</h1>
+<div class="home-link">
+  <a href="https://edwardwclarke.github.io/ECOM118-FLASHCARDS/">Return to Home</a>
+</div>
+
+<div class="flashcard-grid">
+
+<!-- Flashcards start here -->
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the main limitation of DCF?</div><div class="card-face card-back">It assumes fixed cash flows, no flexibility, and no value in timing decisions.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Why is DCF not always realistic?</div><div class="card-face card-back">Because in reality, conditions change and firms can adapt decisions over time.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is meant by "reality is binomial"?</div><div class="card-face card-back">Some outcomes are all or nothing—like a drug passing or failing approval in pharma.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is irreversibility in investment?</div><div class="card-face card-back">Once you invest, you can't get the money back. There's a cost to acting too early.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">When is it okay to invest immediately?</div><div class="card-face card-back">If there's no uncertainty, no flexibility, and no downside to investing right away.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What are the types of real options?</div><div class="card-face card-back">Options to defer, expand, abandon, switch, or stage investments (time-to-build).</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is an investment project compared to?</div><div class="card-face card-back">A call option – the right but not obligation to invest when the value is right.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What does the Black-Scholes formula calculate?</div><div class="card-face card-back">The value of the option to delay investment, based on volatility and timing.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How does deferring a project add value?</div><div class="card-face card-back">It allows the firm to avoid losses or wait for better conditions, adding €0.7mn in value in the example.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How is NPV calculated in this context?</div><div class="card-face card-back">NPV = (3 / (0.10 - 0.02)) - 35 = €2.5 million, using perpetuity with growth.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Why does NPV undervalue the project?</div><div class="card-face card-back">Because it ignores timing and flexibility. Real option value was €5.4mn.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the value of waiting in the D&P model?</div><div class="card-face card-back">F(V) = (V*-K)(V/V*)^β. In the example: €5.4mn, vs €2.5mn from NPV.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What does β represent in D&P?</div><div class="card-face card-back">It adjusts for volatility and opportunity cost. In the example, β = 3.56.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the trigger value V*?</div><div class="card-face card-back">It’s the value at which you should invest. V* = (β/(β-1)) × K = €48.66mn.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How much value does NPV capture?</div><div class="card-face card-back">Only 46% of the project’s value, compared to full real options value.</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Why might firms use simpler models?</div><div class="card-face card-back">A well-built binomial model can be easier to understand and still accurate enough.</div></div></div>
+
+</div>
+</body>
+</html>
