@@ -92,6 +92,7 @@
     .card-back {
       background-color: #fef3c7;
       transform: rotateY(180deg);
+      font-size: 0.95rem;
     }
   </style>
 </head>
@@ -104,7 +105,7 @@
 
 <div class="flashcard-grid">
 
-<!-- Flashcards start here -->
+<!-- Core Concept Flashcards -->
 
 <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the main limitation of DCF?</div><div class="card-face card-back">It assumes fixed cash flows, no flexibility, and no value in timing decisions.</div></div></div>
 
@@ -120,23 +121,23 @@
 
 <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is an investment project compared to?</div><div class="card-face card-back">A call option – the right but not obligation to invest when the value is right.</div></div></div>
 
-<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What does the Black-Scholes formula calculate?</div><div class="card-face card-back">The value of the option to delay investment, based on volatility and timing.</div></div></div>
-
 <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How does deferring a project add value?</div><div class="card-face card-back">It allows the firm to avoid losses or wait for better conditions, adding €0.7mn in value in the example.</div></div></div>
 
 <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How is NPV calculated in this context?</div><div class="card-face card-back">NPV = (3 / (0.10 - 0.02)) - 35 = €2.5 million, using perpetuity with growth.</div></div></div>
 
 <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Why does NPV undervalue the project?</div><div class="card-face card-back">Because it ignores timing and flexibility. Real option value was €5.4mn.</div></div></div>
 
-<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the value of waiting in the D&P model?</div><div class="card-face card-back">F(V) = (V*-K)(V/V*)^β. In the example: €5.4mn, vs €2.5mn from NPV.</div></div></div>
-
-<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What does β represent in D&P?</div><div class="card-face card-back">It adjusts for volatility and opportunity cost. In the example, β = 3.56.</div></div></div>
-
-<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the trigger value V*?</div><div class="card-face card-back">It’s the value at which you should invest. V* = (β/(β-1)) × K = €48.66mn.</div></div></div>
-
-<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How much value does NPV capture?</div><div class="card-face card-back">Only 46% of the project’s value, compared to full real options value.</div></div></div>
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">How much value does NPV capture vs real options?</div><div class="card-face card-back">Only 46% – calculated as 2.5 / 5.4 = 46%</div></div></div>
 
 <div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">Why might firms use simpler models?</div><div class="card-face card-back">A well-built binomial model can be easier to understand and still accurate enough.</div></div></div>
+
+<!-- Equations Flashcards -->
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the Black-Scholes (1973) formula for a call option?</div><div class="card-face card-back">C = S·e<sup>−δT</sup>·N(d₁) − X·e<sup>−rT</sup>·N(d₂), where:<br>d₁ = [ln(S/X) + (r − δ + ½σ²)T] / (σ√T),<br>d₂ = d₁ − σ√T</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the investment value formula from Dixit & Pindyck (1994)?</div><div class="card-face card-back">F(V) = (V* − K)·(V / V*)^β if V < V*;<br>F(V) = V − K if V ≥ V*</div></div></div>
+
+<div class="card" onclick="this.classList.toggle('flipped')"><div class="card-inner"><div class="card-face card-front">What is the formula for the trigger value V*?</div><div class="card-face card-back">V* = (β / (β − 1)) × K<br>Where β adjusts for risk and timing flexibility</div></div></div>
 
 </div>
 </body>
